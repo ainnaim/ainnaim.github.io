@@ -71,34 +71,36 @@
         </ul>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <canvas id="particle-canvas"></canvas>
-        <div class="container hero-content">
-            <div class="hero-badges" data-aos="fade-down">
-                <span class="badge">AI & Automation</span>
-                <span class="badge">Software Development</span>
-                <span class="badge">System Reliability</span>
-                <span class="badge">Data & Analytics</span>
-            </div>
-            <h1 data-aos="fade-up" data-aos-delay="100">
-                Building Digital Solutions with <span class="gradient-text">AI, Software & Automation.</span>
-            </h1>
-            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                Software Maintenance Executive focused on AI-powered solutions, system reliability, and digital transformation. I transform manual, repetitive processes into robust, scalable digital systems.
-            </p>
-            <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
-                <a href="#tccr" class="btn-primary">View My Work</a>
-                <!-- IMPORTANT: Place your PDF at assets/Nur-Ain-Naim-Resume.pdf -->
-                <a href="assets/Nur-Ain-Naim-Resume.pdf" target="_blank" class="btn-secondary">
-                    <i data-lucide="download"></i> Download Resume
-                </a>
-            </div>
+   <!-- Hero Section -->
+<section class="hero" id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="container hero-content">
+        <div class="profile-image-container" data-aos="fade-down">
+            <img src="assets/images/profile.jpg" alt="Nur Ain Naim" class="profile-image">
         </div>
-        <div class="scroll-indicator">
-            <i data-lucide="chevron-down"></i>
+        <div class="hero-badges" data-aos="fade-down">
+            <span class="badge">AI & Automation</span>
+            <span class="badge">Software Development</span>
+            <span class="badge">System Reliability</span>
+            <span class="badge">Data & Analytics</span>
         </div>
-    </section>
+        <h1 data-aos="fade-up" data-aos-delay="100">
+            Building Digital Solutions with <span class="gradient-text">AI, Software & Automation.</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Software Maintenance Executive focused on AI-powered solutions, system reliability, and digital transformation. I transform manual, repetitive processes into robust, scalable digital systems.
+        </p>
+        <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+            <a href="#tccr" class="btn-primary">View My Work</a>
+            <a href="assets/Nur-Ain-Naim-Resume.pdf" target="_blank" class="btn-secondary">
+                <i data-lucide="download"></i> Download Resume
+            </a>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i data-lucide="chevron-down"></i>
+    </div>
+</section>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -180,22 +182,28 @@
     </section>
 
     <!-- Featured Project: TCCR -->
-    <section class="tccr-project" id="tccr">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Featured Case Study</span>
-                <h2>From Paper Receipts to AI-Powered Operations</h2>
-                <div class="underline"></div>
-            </div>
+<section class="tccr-project" id="tccr">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Featured Case Study</span>
+            <h2>From Paper Receipts to AI-Powered Operations</h2>
+            <div class="underline"></div>
+        </div>
 
-            <div class="tccr-overview" data-aos="fade-up">
-                <p class="tccr-description">
-                    Developed and deployed an AI-powered digital workflow system that replaces paper-based TVM collection processes with automated receipt recognition and data extraction. Successfully implemented across <strong>Kelana Jaya (KJL)</strong>, <strong>Ampang (AGL)</strong>, and <strong>Monorail (MRL)</strong> lines.
-                </p>
-            </div>
+        <div class="tccr-overview" data-aos="fade-up">
+            <p class="tccr-description">
+                Developed and deployed an AI-powered digital workflow system that replaces paper-based TVM collection processes with automated receipt recognition and data extraction. Successfully implemented across <strong>Kelana Jaya (KJL)</strong>, <strong>Ampang (AGL)</strong>, and <strong>Monorail (MRL)</strong> lines.
+            </p>
+        </div>
 
-            <!-- Before / After Slider -->
-            <div class="comparison-slider" data-aos="zoom-in">
+        <!-- Project Screenshot -->
+        <div class="project-screenshot" data-aos="zoom-in">
+            <img src="assets/images/tccr.png" alt="TCCR System Interface" class="screenshot-image">
+            <p class="screenshot-caption">AI-Powered TCCR System Dashboard</p>
+        </div>
+
+        <!-- Before / After Slider -->
+        <div class="comparison-slider" data-aos="zoom-in">
                 <div class="comparison-container">
                     <div class="comparison-item before">
                         <div class="comparison-label">BEFORE: Manual Process</div>
@@ -295,16 +303,22 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-icon">
-                        <i data-lucide="hand"></i>
-                    </div>
-                    <h3>AI-Based Sign Language Translation</h3>
-                    <span class="project-type">Final Year Project</span>
-                    <p>Developed an NLP/Computer Vision system to translate sign language using Python, TensorFlow, and CNNs. Handled multimedia data preprocessing and geometric modeling, achieving 80% accuracy in testing to bridge communication gaps.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>TensorFlow</span><span>CNN</span><span>OpenCV</span>
-                    </div>
-                </div>
+    <div class="project-image-container">
+        <img src="assets/images/image.png" alt="Sign Language Translation System" class="project-screenshot">
+    </div>
+    <div class="project-icon">
+        <i data-lucide="hand"></i>
+    </div>
+    <h3>AI-Based Sign Language Translation</h3>
+    <span class="project-type">Final Year Project</span>
+    <p>Developed an NLP/Computer Vision system to translate sign language using Python, TensorFlow, and CNNs. Handled multimedia data preprocessing and geometric modeling, achieving 80% accuracy in testing to bridge communication gaps.</p>
+    <div class="project-tech">
+        <span>Python</span><span>TensorFlow</span><span>CNN</span><span>OpenCV</span>
+    </div>
+    <a href="https://canva.link/ulceixjw7oduxj5" target="_blank" class="project-link">
+        View Project Details <i data-lucide="external-link"></i>
+    </a>
+</div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-icon">
                         <i data-lucide="layout-dashboard"></i>
