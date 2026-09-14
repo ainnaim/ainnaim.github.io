@@ -202,28 +202,46 @@
             <p class="screenshot-caption">AI-Powered TCCR System Dashboard</p>
         </div>
 
-        <!-- Before / After Slider -->
-        <div class="comparison-slider" data-aos="zoom-in">
-                <div class="comparison-container">
-                    <div class="comparison-item before">
-                        <div class="comparison-label">BEFORE: Manual Process</div>
-                        <div class="process-step">Paper receipts collected</div>
-                        <div class="process-step">Manual data entry</div>
-                        <div class="process-step error">High risk of human error</div>
-                        <div class="process-step">Time-consuming processing</div>
-                    </div>
-                    <div class="comparison-item after">
-                        <div class="comparison-label">AFTER: AI-Powered Workflow</div>
-                        <div class="process-step">Receipt image captured</div>
-                        <div class="process-step">AI/OCR automated processing</div>
-                        <div class="process-step success">Structured data extraction</div>
-                        <div class="process-step">Instant digital database & reporting</div>
-                    </div>
-                    <div class="slider-handle">
-                        <i data-lucide="arrow-left-right"></i>
-                    </div>
-                </div>
-            </div>
+        <!-- Before / After Side-by-Side Comparison -->
+<div class="comparison-grid" data-aos="zoom-in">
+    <!-- BEFORE Card -->
+    <div class="comparison-card before-card">
+        <div class="comparison-label">
+            <i data-lucide="file-x"></i> BEFORE: Manual Process
+        </div>
+        <div class="process-step error">
+            <i data-lucide="x-circle"></i> Paper receipts collected
+        </div>
+        <div class="process-step error">
+            <i data-lucide="x-circle"></i> Manual data entry
+        </div>
+        <div class="process-step error">
+            <i data-lucide="alert-triangle"></i> High risk of human error
+        </div>
+        <div class="process-step error">
+            <i data-lucide="clock"></i> Time-consuming processing
+        </div>
+    </div>
+
+    <!-- AFTER Card -->
+    <div class="comparison-card after-card">
+        <div class="comparison-label">
+            <i data-lucide="sparkles"></i> AFTER: AI-Powered Workflow
+        </div>
+        <div class="process-step success">
+            <i data-lucide="check-circle"></i> Receipt image captured
+        </div>
+        <div class="process-step success">
+            <i data-lucide="check-circle"></i> AI/OCR automated processing
+        </div>
+        <div class="process-step success">
+            <i data-lucide="check-circle"></i> Structured data extraction
+        </div>
+        <div class="process-step success">
+            <i data-lucide="database"></i> Instant digital database & reporting
+        </div>
+    </div>
+</div>
 
             <!-- Scanning Animation -->
             <div class="scanning-demo" data-aos="fade-up">
