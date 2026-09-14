@@ -493,90 +493,82 @@ body:hover .cursor-outline {
     line-height: 1.8;
 }
 
-/* Comparison Slider */
-.comparison-slider {
-    max-width: 800px;
+/* =========================================
+   NEW: SIDE-BY-SIDE COMPARISON GRID
+   ========================================= */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 900px;
     margin: 0 auto 80px;
-    position: relative;
-    height: 300px;
+}
+
+.comparison-card {
+    padding: 32px;
     border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-}
-
-.comparison-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.comparison-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.comparison-item.before {
-    background: #334155;
-    z-index: 1;
-    width: 50%; /* Initial state, controlled by JS */
-    border-right: 2px solid var(--white);
-    overflow: hidden;
+.comparison-card:hover {
+    transform: translateY(-5px);
 }
 
-.comparison-item.after {
-    background: var(--secondary);
-    z-index: 0;
+/* Before Card Styling (Dark/Gray to represent old manual way) */
+.before-card {
+    background: #1E293B;
+    color: #CBD5E1;
+    border: 1px solid #334155;
+}
+
+/* After Card Styling (Brand Blue to represent modern AI) */
+.after-card {
+    background: linear-gradient(135deg, var(--secondary), #1D4ED8);
+    color: var(--white);
+    border: 1px solid var(--accent);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
 }
 
 .comparison-label {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.before-card .comparison-label { color: #FCA5A5; }
+.after-card .comparison-label { color: #86EFAC; }
 
 .process-step {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-.process-step::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: currentColor;
+.process-step i {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
 .process-step.error { color: #FCA5A5; }
 .process-step.success { color: #86EFAC; }
 
-.slider-handle {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 40px;
-    transform: translateX(-50%);
-    background: var(--white);
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: ew-resize;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    border-radius: 4px;
+/* Responsive: Stack vertically on mobile */
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Scanning Animation */
