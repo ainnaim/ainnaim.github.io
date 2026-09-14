@@ -124,42 +124,7 @@ initParticles();
 animateParticles();
 
 // ==========================================
-// 3. BEFORE / AFTER SLIDER
-// ==========================================
-const slider = document.querySelector('.comparison-slider');
-const beforeItem = document.querySelector('.comparison-item.before');
-const handle = document.querySelector('.slider-handle');
-
-let isDragging = false;
-
-const updateSlider = (x) => {
-    const rect = slider.getBoundingClientRect();
-    let percentage = ((x - rect.left) / rect.width) * 100;
-    
-    // Clamp between 10% and 90%
-    percentage = Math.max(10, Math.min(90, percentage));
-    
-    beforeItem.style.width = `${percentage}%`;
-    handle.style.left = `${percentage}%`;
-};
-
-handle.addEventListener('mousedown', () => isDragging = true);
-window.addEventListener('mouseup', () => isDragging = false);
-window.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    updateSlider(e.clientX);
-});
-
-// Touch support
-handle.addEventListener('touchstart', () => isDragging = true);
-window.addEventListener('touchend', () => isDragging = false);
-window.addEventListener('touchmove', (e) => {
-    if (!isDragging) return;
-    updateSlider(e.touches[0].clientX);
-});
-
-// ==========================================
-// 4. MOBILE MENU TOGGLE
+// 3. MOBILE MENU TOGGLE
 // ==========================================
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -176,7 +141,7 @@ mobileLinks.forEach(link => {
 });
 
 // ==========================================
-// 5. NAVBAR SCROLL EFFECT
+// 4. NAVBAR SCROLL EFFECT
 // ==========================================
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
